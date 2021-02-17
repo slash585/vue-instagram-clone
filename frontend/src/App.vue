@@ -1,19 +1,26 @@
 <script>
-export default {
+import Header from '@/components/Header.vue'
+import Container from '@/components/Container.vue'
 
+
+export default {
+  components:{
+    Header,
+    Container
+  }
 }
 </script>
 
 <template lang="pug">
-div
-  div
-    router-link(to="/") Home |
-    router-link(to="/profile") Profile |
-    router-link(to="/direct") Direct |
-    router-link(to="/explore") Explore
-  router-view
+#app
+  Header
+  main.content
+    Container
+      router-view
 </template>
 
 <style lang="scss" scoped>
-
+.content {
+ padding-top: 40px;
+}
 </style>
