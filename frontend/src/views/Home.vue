@@ -1,10 +1,12 @@
 <script>
 import CustomText from '@/components/CustomText.vue'
+import HomeIcon from '@/icons/home.svg'
 
 export default {
   name:"Home",
   components:{
-    CustomText
+    CustomText,
+    HomeIcon
   }
 }
 </script>
@@ -16,6 +18,7 @@ div
   CustomText(tag="p" class="a2" size="small") Hello World
   CustomText(tag="p" class="a3" size="xsmall") Hello World
   CustomText(tag="p" class="a4" size="xxsmall") Hello World
+  HomeIcon(width="60" height="60")
 </template>
 
 <style scoped>
