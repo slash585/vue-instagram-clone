@@ -1,13 +1,17 @@
 <script>
 export default {
-  name: "About"
+  name:"Direct",
+  components:{
+
+  }
 }
 </script>
 
 <template lang="pug">
+h1 Direct
 
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
