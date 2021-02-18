@@ -5,6 +5,7 @@ import IconDirect from '@/icons/direct.svg'
 import IconDirectFill from '@/icons/direct-fill.svg'
 import IconExplore from '@/icons/explore.svg'
 import IconExploreFill from '@/icons/explore-fill.svg'
+import Avatar from '@/components/Avatar.vue'
 import Container from './Container.vue'
 
 export default {
@@ -15,7 +16,8 @@ export default {
     IconDirect,
     IconDirectFill,
     IconExplore,
-    IconExploreFill
+    IconExploreFill,
+    Avatar
   }
 }
 </script>
@@ -36,11 +38,12 @@ export default {
       router-link(to="/explore")
         IconExploreFill(v-if="$route.name == 'Explore'")
         IconExplore(v-else)
-      router-link(to="/profile") Profile
+      router-link(to="/profile")
+        Avatar(:size="26")
 
 </template>
 
-<style l scoped>
+<style scoped>
 
 .header {
   border-bottom: 1px solid rgb(var(--b6a));
