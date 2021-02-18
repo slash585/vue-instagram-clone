@@ -12,26 +12,20 @@ export default {
 </script>
 
 <template lang="pug">
-div
-  CustomText Hello World
-  CustomText(tag="p" class="a1") Hello World
-  CustomText(tag="p" class="a2" size="small") Hello World
-  CustomText(tag="p" class="a3" size="xsmall") Hello World
-  CustomText(tag="p" class="a4" size="xxsmall") Hello World
-  HomeIcon(width="60" height="60")
+.home
+  .timeline
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus diam. Vivamus bibendum augue vitae est gravida, ut pretium mi porttitor. Ut tincidunt mollis est, quis ornare odio aliquam et. Praesent vitae justo auctor, fringilla lacus eu, pretium tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam suscipit dui sed arcu lacinia, in pulvinar ipsum gravida. Phasellus tristique diam ac arcu condimentum sodales. Vestibulum cursus tincidunt urna ac vestibulum. Nam iaculis ligula in mattis luctus.
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus diam. Vivamus bibendum augue vitae est gravida, ut pretium mi porttitor. Ut tincidunt mollis est, quis ornare odio aliquam et. Praesent vitae justo auctor, fringilla lacus eu, pretium tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam suscipit dui sed arcu lacinia, in pulvinar ipsum gravida. Phasellus tristique diam ac arcu condimentum sodales. Vestibulum cursus tincidunt urna ac vestibulum. Nam iaculis ligula in mattis luctus.
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus diam. Vivamus bibendum augue vitae est gravida, ut pretium mi porttitor. Ut tincidunt mollis est, quis ornare odio aliquam et. Praesent vitae justo auctor, fringilla lacus eu, pretium tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam suscipit dui sed arcu lacinia, in pulvinar ipsum gravida. Phasellus tristique diam ac arcu condimentum sodales. Vestibulum cursus tincidunt urna ac vestibulum. Nam iaculis ligula in mattis luctus.
+  .sidebar
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id risus diam. Vivamus bibendum augue vitae est gravida, ut pretium mi porttitor. Ut tincidunt mollis est, quis ornare odio aliquam et. Praesent vitae justo auctor, fringilla lacus eu, pretium tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam suscipit dui sed arcu lacinia, in pulvinar ipsum gravida. Phasellus tristique diam ac arcu condimentum sodales. Vestibulum cursus tincidunt urna ac vestibulum. Nam iaculis ligula in mattis luctus.
 </template>
 
 <style scoped>
-.a1{
-  color: rgb(var(--ba8));
+.home {
+  display: grid;
+  grid-template-columns: 1fr 295px;
+  grid-gap: 30px;
 }
-.a2{
-  color: rgb(var(--eac));
-}
-.a3{
-  color: rgb(var(--fa7));
-}
-.a4{
-  color: rgb(var(--d20));
-}
+
 </style>
