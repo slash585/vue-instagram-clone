@@ -1,5 +1,7 @@
 <script>
+import CustomText from '@/components/CustomText.vue'
 import Post from '@/components/Post.vue'
+
 export default {
   name:"Home",
   components:{
