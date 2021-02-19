@@ -1,9 +1,11 @@
 <script>
 import CustomText from '@/components/CustomText.vue'
+import Post from '@/components/Post.vue'
 
 export default {
   name:"Home",
   components:{
+    Post
   }
 }
 </script>
@@ -11,6 +13,15 @@ export default {
 <template lang="pug">
 .home
   .timeline
+    Post
+    br
+    Post
+    br
+    Post
+    br
+    Post
+    br
+    Post
   .sidebar
 
 </template>
